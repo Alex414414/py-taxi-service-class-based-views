@@ -15,10 +15,8 @@
           <tr>
             <td><a href="{{ car.get_absolute_url }}"> {{ car.id }}</a></td>
             <td>{{ car.model }}</td>
-            <td>{{ car.manufacturer }}</td>
+            <td>{{ car.manufacturer.name }}</td>
           </tr>
-        {% empty %}
-          No cars yet.
         {% endfor %}
       </tbody>
     </table>
