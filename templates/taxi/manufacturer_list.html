@@ -15,10 +15,10 @@
             <td>{{ manufacturer.name }}</td>
             <td>{{ manufacturer.country }}</td>
           </tr>
-        {% empty %}
-          No manufacturer yet.
         {% endfor %}
       </tbody>
     </table>
+  {% else %}
+    No manufacturers yet.
   {% endif %}
 {% endblock %}
